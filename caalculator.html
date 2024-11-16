@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Environmental Impact Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <header>
+        <h1>Food Environmental Impact Calculator</h1>
+        <p>Calculate the environmental impact of your food choices.</p>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <h2>Calculate Your Food's Environmental Impact</h2>
+
+            <form id="food-form">
+                <label for="food-choice">Choose your food type:</label>
+                <select id="food-choice">
+                    <option value="beef">Beef (Meat-based)</option>
+                    <option value="chicken">Chicken (Poultry)</option>
+                    <option value="plant">Plant-based (Vegetables/Grains)</option>
+                </select>
+
+                <label for="quantity">Enter quantity (in kg):</label>
+                <input type="number" id="quantity" min="0.1" step="0.1" required>
+
+                <button type="submit">Calculate Environmental Impact</button>
+            </form>
+
+            <div id="result" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Impact Calculator. Data sourced from environmental research.</p>
+    </footer>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>
